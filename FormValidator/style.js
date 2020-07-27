@@ -31,20 +31,20 @@ form.addEventListener("submit", function (e) {
     console.log("empty");
     showError(email, "Email is required");
   } else {
-    showSuccess(username);
+    showSuccess(email);
   }
 
   if (password.value == "") {
     console.log("empty");
     showError(password, "Please Enter the Password");
   } else {
-    showSuccess(username);
+    showSuccess(password);
   }
 
   if (password2.value == "") {
     console.log("empty");
     showError(password2, "Please Confirm the Password");
   } else {
-    showSuccess(username);
+    showSuccess(password2);
   }
 });
