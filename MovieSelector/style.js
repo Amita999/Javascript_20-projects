@@ -28,6 +28,7 @@ function updateSelectedCountfunction(){
 }
 
 function setMovieDataFunction(movieIndex,moviePrice){
+    // console.log(movieIndex);
     localStorage.setItem('selectedMovieIndex',movieIndex);
     localStorage.setItem('selectedMoviePrice',moviePrice);
 
