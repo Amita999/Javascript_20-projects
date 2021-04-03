@@ -1,5 +1,7 @@
 //getting all the DOM elements
 
+// const { min } = require("lodash");
+
 const video = document.getElementById('video');
 const playButton = document.getElementById('play');
 const stopButton = document.getElementById('stop');
@@ -11,10 +13,9 @@ const timestamp = document.getElementById('timestamp');
 function toggleVideoStatusFunction(){
    
   if(video.paused){
-
     video.play();
-}else{
-        video.pause();  
+    }else{
+     video.pause();  
     }
 }
 
@@ -30,13 +31,29 @@ function updatePlayIconFunction(){
 //updating progressbar &time stamp
 function updateProgressFunction(){
     progress.value = (video.currentTime / video.duration) * 100;
+     //get minutes
+  let mins = Math.floor(video.currentTime / 60);
 
-    
+  if(mins < 10){
+  mins = '0'+ String(mins);
+  console.log(mins);
+  }
+//get seconds
+let secs = Math.floor(video.currentTime % 60);
+if(secs < 10){
+secs = '0'+ String(secs);
+console.log(secs);
+
+}
+
+timestamp.innerHTML = `${mins}:${secs}`;
+
 }
  
-// set video progress 
+// set video time to progress 
 function setVideoProgressFunction(){
-  return true  
+  video.currentTime = (+progress.value * video.duration) / 100;
+ 
 }
 
 //stop video 
@@ -51,7 +68,7 @@ function stopVideoFunction(){
 video.addEventListener('click', toggleVideoStatusFunction);
 video.addEventListener('pause', updatePlayIconFunction);
 video.addEventListener('play', updatePlayIconFunction);
-video.addEventListener('timeUpdate', updateProgressFunction);
+video.addEventListener('timeupdate', updateProgressFunction);
 
 
 playButton.addEventListener('click',toggleVideoStatusFunction);
