@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menuSliderStyle.css">
+    <title>My Landing Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/potraits/men/76.jpg" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>My Landing Psge</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, minima.
+        </p>
+        <button class="cta-btn" id="open">
+            Sign Up
+        </button>
+
+    </header>
+    <div class="container">
+        <h2>What is this landing page about</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius est aliquam laborum, eligendi,
+            accusamus dolorum nemo aperiam quia placeat officia repellendus. Neque totam similique, sint repellat
+            blanditiis maiores. Odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis, dolore maxime consequatur fugit
+            neque reiciendis magni totam ipsam ab fugiat vero labore in eius iste possimus eaque maiores est. Odio harum
+            autem saepe cupiditate nisi commodi, ipsum reiciendis culpa quos eos labore, modi ut suscipit atque voluptas
+            impedit fugiat?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, commodi!</p>
+        <h2>Tell Me More...</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam autem reiciendis quam optio dolore beatae
+            repellat, neque illo perferendis! Accusamus quasi id dolore. Repellendus ipsum, culpa ipsam nesciunt iusto
+            reprehenderit alias ullam nobis laboriosam id voluptatum in dolores dolorum odit.</p>
+        <h2>Benefits</h2>
+        <ul>
+            <li>LifeTime Access</li>
+            <li>30day MoneyBack</li>
+            <li>Tailored Customer Experience</li>
+
+        </ul>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times">
+
+                </i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register With Us To Get Offers, support, and more</p>
+                <form class="modal-form">
+                    <div><label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name">
+                    </div>
+                    <div><label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter email">
+                    </div>
+                    <div><label for="password">Password</label>
+                        <input type="password" id="passwword" placeholder="Enter password">
+                    </div>
+                    <div><label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/menuSlider.js"></script>
+</body>
+
+</html>

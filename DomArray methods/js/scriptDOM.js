@@ -62,7 +62,7 @@ function sortByWealthFunction(){
 }
 
 function filterMillionaireFunction(){
-    data = data.filter((user) => user.money > 10000000);
+    data = data.filter((user) => user.money > 1000000);
     updateDOMFunction();
 }
 
